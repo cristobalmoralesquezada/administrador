@@ -6,17 +6,13 @@ import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: LoginComponent,
-    pathMatch: 'full'
+    path: '', component: LoginComponent, pathMatch: 'full'
   },
   {
-    path: 'dashboard',
-    component: DashboardComponent
+    path: 'dashboard', component: DashboardComponent 
   },
   {
-    path: '**',
-    redirectTo: ''
+    path: '**', redirectTo: ''
   }
 ];
 

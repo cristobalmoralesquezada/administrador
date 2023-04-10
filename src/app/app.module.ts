@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
+import { SharedModule } from './shared/shared.module';
 
 
 //Módullo Personalizado
@@ -21,8 +22,8 @@ import { PrimeNgModule } from './prime-ng/prime-ng.module';
   imports: [
     BrowserModule,
     AppRouterModule,
-    //AppRoutingModule,
-    PrimeNgModule
+    PrimeNgModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
